@@ -1,26 +1,13 @@
-newlist= [50, 30, 70, 190, 500, 200,60]
-# n=newlist[::-1] # left to right
-# n1=n[::-1] # right to left
-# print(n)
-# print(n1)
+#################   Rotate a list left by one position.
 
-# i=len(newlist)-1
-# while i>=0:
-#     if newlist[i]==newlist[0]:
-#     newlist.append(newlist[0])
-#     break
-#     i=i-1
-# newlist1=newlist[1:]
-# newlist2=newlist + newlist1
-# print(newlist2)
+# newlist= [50, 30, 70, 190, 500, 200,60]
 #
-# newlist2 = newlist[-1:]
-# newlist3 = newlist[:1]
-# print(newlist2)
-# print(newlist3)
+# result = newlist[1:] + [newlist[0]]
+# print("LEFT :", result)
+#
+# # result = [newlist[-1]] + newlist[:-1]
+# # print("Right :", result)
 
 mylist = [1, 2, 3, 4, 5]
-
-# ১ ঘর Left rotate
-rotated = mylist[2:] + mylist[:2]
+rotated = mylist[1:] + mylist[:1]
 print(rotated)

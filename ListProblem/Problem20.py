@@ -6,12 +6,12 @@
 #     proage.extend(x)
 # print(proage)
 
-# age = [[1,2],[3,4]]
-# proage = [item for x in age for item in x]       # Read it like two nested for loops:
-# # for x in age:        # x = [1,2], then [3,4]
-# #     for item in x:   # item = 1,2, then 3,4
-# #         collect item
-# print(proage)
+age = [[1,2],[3,4]]
+proage = [item for x in age for item in x]       # Read it like two nested for loops:
+# for x in age:        # x = [1,2], then [3,4]
+#     for item in x:   # item = 1,2, then 3,4
+#         collect item
+print(proage)
 
 # import itertools
 # age = [[1,2],[3,4],[5,6],[7,8]]
