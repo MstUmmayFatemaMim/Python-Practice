@@ -1,12 +1,12 @@
 # ######## Shallow copy problem       .copy() only copies the outer list — the inner lists are still shared!
 ###Demonstrate shallow copy problem with nested lists.
 
-# a = [[1, 2], [3, 4]]
-# b = a.copy()           # looks safe...
-# b[0].append(99) #It shares the inner object
-# b.append([5, 6]) #It does not share.the outer object. *** If I want to share this,I need to use deep copy.
-# print(a)   # [[1, 2, 99], [3, 4]]  ← a changed!
-# print(b)    # [[1, 2, 99], [3, 4]]
+a = [[1, 2], [3, 4]]
+b = a.copy()           # looks safe...
+b[0].append(99) #It shares the inner object
+b.append([5, 6]) #It does not share.the outer object. *** If I want to share this,I need to use deep copy.
+print(a)   # [[1, 2, 99], [3, 4]]  ← a changed!
+print(b)    # [[1, 2, 99], [3, 4]]
 
 ###########Method 8 — prove it with id() — see memory address
 # a = [[1, 2], [3, 4]]
