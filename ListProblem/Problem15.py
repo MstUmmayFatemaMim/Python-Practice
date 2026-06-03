@@ -11,3 +11,14 @@
 mylist = [1, 2, 3, 4, 5]
 rotated = mylist[1:] + mylist[:1]
 print(rotated)
+
+# from collections import deque
+#
+# mylist = [1, 2, 3, 4, 5]
+#
+# # Convert to deque, rotate left by 1, and convert back to list
+# d = deque(mylist)
+# d.rotate(-1)
+# rotated = list(d)
+#
+# print(rotated)

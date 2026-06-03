@@ -64,9 +64,9 @@ def delete_item():
 
 
 def showlist():
-    print("\n***** Contact Book ******")
-    print("1. Add Contact")
-    print("2. Delete Contact")
+    print("\n***** Shopping Cart ******")
+    print("1. Add Items")
+    print("2. Delete Items")
     print("0. Exit")
     print("*************************")
 
